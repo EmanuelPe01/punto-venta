@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar comercial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section class="container text-center p-5">
+        <div class="card">
+            <h2>Registrar un comercial</h2>
+            <form id="formComercial">
+                <div class="row justify-content-center text-start">
+                    <div class="col-5 p-3">
+                        <label for="nombre" class="text-left">Nombre: </label>
+                        <input class="form-control" type="text" placeholder="Nombre(s)" id="nombre" required>
+                    </div>
+                    <div class="col-5 p-3">
+                        <label for="apellidoP">Apellido paterno: </label>
+                        <input class="form-control" type="text" placeholder="Apellido paterno" id="apellidoP" required>
+                    </div>
+                    <div class="col-5 p-3">
+                        <label for="apellidoM">Apellido materno: </label>
+                        <input class="form-control" type="text" placeholder="Apellido materno" id="apellidoM" required>
+                    </div>
+                    <div class="col-5 p-3">
+                        <label for="comision">Comisión: </label>
+                        <input class="form-control" type="text" placeholder="Ciudad" id="comision" required>
+                    </div>
+
+                    <div class="col-3 p-3">
+                        <button type="submit" class="btn btn-success">Almacenar</button>
+                    </div>
+                    <div class="col-2 p-3">
+                        <a href="../index.html" class="btn btn-danger">Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="container p-3 text-center">
+        <table class="table" id="tablaClientes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido paterno</th>
+                    <th>Apellido materno</th>
+                    <th>Comercial</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+    <script src="../js/Comercial.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
